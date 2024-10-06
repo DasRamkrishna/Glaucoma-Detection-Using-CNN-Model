@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glaucoma Detection</title>
+    <style>
+        /* Reset basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            background-color: #f3f4f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5mm; /* Set the gap between headline and form to 0.5cm (5mm) */
+            text-align: center;
+            color: #0d47a1;
+            position: relative; /* Changed to relative for better positioning */
+            top: 20px; /* Adjusted for spacing from the top */
+        }
+
+        form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            margin-top: 40px; /* Ensure form has space below the heading */
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1565c0;
+        }
+
+        .preview-container {
+            display: none;
+            margin-bottom: 15px;
+        }
+
+        .preview-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Glaucoma Detection</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <div class="preview-container" id="preview-container">
+            <img id="preview-image" alt="Image Preview">
+        </div>
+        <input type="file" name="image" accept="image/*" required onchange="previewImage(event)">
+        <br>
+        <small>(.jpg/.jpeg file format only)</small>
+        <br>
+        <input type="submit" value="Upload and Analyze">
+    </form>
+</body>
+</html>

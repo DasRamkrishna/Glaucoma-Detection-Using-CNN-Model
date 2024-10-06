@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .result-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0d47a1;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0d47a1;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Predictive Result</h1>
+        <p><strong>Result:</strong> {{ result }}</p>
+        <p><strong>Confidence Percentage:</strong> {{ percentage }}%</p>
+        <p><strong>Tip:</strong> {{ message }}</p>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
