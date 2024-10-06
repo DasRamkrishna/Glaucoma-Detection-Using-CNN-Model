@@ -4,12 +4,17 @@ This project involves building a **Glaucoma Detection AI-ML model** using a **Co
 **IMPORTANT NOTE :** In the uploaded **Train** and **Validation** folder, here I only uploaded some sample photos. But in original you have to upload as much photos as you can collect (only in .jpg/.jpeg) format. If I tell about mine, In actual I used more than 7000 photos for train and more than 1000 photos for validation for the better accuracy. 
 
 
+
 **The Website User Interface :-**
 ![Screenshot (37)](https://github.com/user-attachments/assets/5314734d-46c3-4c0d-8d5e-78f6098684e4)
 
 
+
+
 **If the uploaded retinal image Glaucoma Affected, Then :-**
 ![Screenshot (38)](https://github.com/user-attachments/assets/6d193fa2-d1a0-45b4-b787-7c73d7b3cb61)
+
+
 
 
 **If the uploaded retinal image Normal, Then :-**
