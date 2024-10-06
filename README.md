@@ -1,1 +1,2 @@
 # Glaucoma-Detection-Using-CNN-Model
+This project involves building a **Glaucoma Detection AI-ML model** using a **Convolutional Neural Network (CNN)** to classify retinal images as either "Glaucoma Affected" or "Normal." The model is trained using **ImageDataGenerator** for data augmentation, with **binary cross-entropy** loss, **Adam optimizer**, and is saved in `.keras` format. The user can upload an image, and the model predicts glaucoma presence with a percentage, suggesting medical consultation if affected.
